@@ -102,7 +102,7 @@ p{margin:0 0 1em}
 .hero-stage{position:relative;aspect-ratio:1/1;min-width:0}
 .hero-grid>*{min-width:0}
 @media (min-width:961px){.hero-stage{min-height:420px}}
-@media (max-width:640px){.hero-stage .g1{left:0;width:54%}.hero-stage .g2{right:0}.hero-stage .g3{left:6%;bottom:6%}.hero .lede{font-size:18px}}
+@media (max-width:640px){.hero-stage .g1{left:0;width:54%}.hero-stage .g2{right:0}.hero-stage .g3{display:none}.hero .lede{font-size:18px}}
 .hero-stage .bg{position:absolute;inset:0;border-radius:var(--radius-lg);overflow:hidden}
 .hero-stage .bg img{width:100%;height:100%;object-fit:cover}
 .hero-stage .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,27,51,0) 40%,rgba(11,27,51,.35) 100%)}
