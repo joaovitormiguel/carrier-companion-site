@@ -7,8 +7,8 @@
   onScroll();window.addEventListener('scroll',onScroll,{passive:true});
 
   // Mark the current page in the nav
-  const here=location.pathname.replace(/\/index\.html$/,'/').replace(/\.html$/,'');
-  document.querySelectorAll('.nav-links a').forEach(a=>{const href=a.getAttribute('href').replace(/\.html$/,'');if(href===here||(href!=='/'&&here.endsWith(href)))a.setAttribute('aria-current','page');});
+  const seg=(location.pathname.split('/').pop()||'index').replace(/\.html$/,'');
+  document.querySelectorAll('.nav-links a').forEach(a=>{const href=a.getAttribute('href').replace(/\.html$/,'').replace(/^\.\//,'');if(href===seg)a.setAttribute('aria-current','page');});
 
   // Reveal on scroll
   const els=document.querySelectorAll('.reveal');
