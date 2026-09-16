@@ -118,7 +118,7 @@ p{margin:0 0 1em}
 .hero-stage .g1{left:-6%;top:12%;width:44%}
 .hero-stage .g2{right:-10%;top:28%}
 @media (max-width:1280px){.hero-stage .g2{right:-4%}}
-.hero-stage .g3{left:14%;bottom:-3%}
+.hero-stage .g3{left:14%;bottom:2.5%}
 .float{animation:float 9s ease-in-out infinite}
 .float.d2{animation-delay:-3s}
 .float.d3{animation-delay:-6s}
