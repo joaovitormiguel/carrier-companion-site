@@ -126,6 +126,13 @@ p{margin:0 0 1em}
 .hero-strip{margin-top:clamp(48px,6vw,80px);border-top:1px solid var(--line);padding:22px 0;display:flex;gap:32px;justify-content:space-between;flex-wrap:wrap;font-size:13px;color:var(--mute);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
 .hero-strip span b{color:var(--ink);font-weight:600}
 
+/* Full-bleed image section */
+.bg-section{position:relative;background:var(--bg) center right/cover no-repeat;min-height:clamp(560px,52vw,820px);display:flex;align-items:center;overflow:hidden}
+.bg-section::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(246,247,249,.96) 0%,rgba(246,247,249,.86) 34%,rgba(246,247,249,.25) 62%,rgba(246,247,249,0) 100%)}
+.bg-section .container{position:relative;width:100%}
+.bg-copy{max-width:560px}
+@media (max-width:900px){.bg-section{background-position:center bottom;min-height:0;padding-bottom:58vw}.bg-section::before{background:linear-gradient(180deg,rgba(246,247,249,.97) 0%,rgba(246,247,249,.94) 55%,rgba(246,247,249,0) 100%)}}
+
 /* Cards */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .cards.two{grid-template-columns:repeat(2,1fr)}
