@@ -59,9 +59,9 @@ a.ext:hover{color:var(--sky-deep)}
 .nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);background:rgba(246,247,249,.75);border-bottom:1px solid transparent;transition:border-color .3s ease,background .3s ease}
 .nav.is-scrolled{border-bottom-color:var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
-.brand{display:flex;align-items:center;gap:10px;color:var(--ink)}
-.brand svg{height:28px;width:auto}
-.brand .wordmark{font-size:13px;font-weight:700;font-style:italic;line-height:.92;letter-spacing:.01em;text-transform:uppercase}
+.brand{display:flex;align-items:center;color:var(--ink)}
+.brand img{height:30px;width:auto;display:block}
+.footer .brand img{height:34px}
 .nav-links{display:flex;gap:28px;align-items:center;font-size:15px;font-weight:500;color:var(--text)}
 .nav-links a{position:relative;padding:6px 0}
 .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--sky);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
