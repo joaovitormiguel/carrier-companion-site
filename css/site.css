@@ -193,6 +193,8 @@ a.ext:hover{color:var(--sky-deep)}
 @media (max-width:900px){.lineage{grid-template-columns:1fr}}
 .stamp{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.18);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#c9d3e2}
 .stamp b{color:var(--white);font-style:italic}
+.stamp-logo{display:block;height:20px;width:auto;opacity:.95;transition:opacity .2s ease}
+.stamp a:hover .stamp-logo{opacity:.7}
 
 /* Footer */
 .footer{background:var(--ink);color:#aab2bd;padding:64px 0 32px;font-size:14px}
@@ -208,7 +210,7 @@ a.ext:hover{color:var(--sky-deep)}
 .footer-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;color:#7c8592}
 .footer-bottom .hallmark b{color:#c9ced6;font-style:italic}
 .footer-bottom .hallmark{text-align:right}
-.lineage-logo{display:block;height:22px;width:auto;opacity:.75;margin:0 0 10px auto}
+.lineage-logo{display:block;height:22px;width:auto;opacity:.75;margin:0 0 10px 0}
 .lineage-logo.lg{height:34px;margin:0 0 24px 0;opacity:.9}
 @media (max-width:800px){.footer-bottom .hallmark{text-align:left}.lineage-logo{margin-left:0}}
 
