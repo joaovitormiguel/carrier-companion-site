@@ -6,9 +6,6 @@
   const onScroll=()=>{if(!nav)return;nav.classList.toggle('is-scrolled',window.scrollY>8);};
   onScroll();window.addEventListener('scroll',onScroll,{passive:true});
 
-  // Mark the current page in the nav
-  const seg=(location.pathname.split('/').pop()||'index').replace(/\.html$/,'');
-  document.querySelectorAll('.nav-links a').forEach(a=>{const href=a.getAttribute('href').replace(/\.html$/,'').replace(/^\.\//,'');if(href===seg)a.setAttribute('aria-current','page');});
 
   // Reveal on scroll
   const els=document.querySelectorAll('.reveal');
